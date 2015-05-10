@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/*
+Theme Name:     illustnote_original
+Theme URI:      http: //example.com/
+Description:    オリジナルテンプレート
+Author:         spicagraph
+Author URI:     http://in.spicagraph.com/
+Version:        0.1.0
+*/
+
+@import url("reset.css");
+
+/**/
+body{
+	background-image:url("images/bg_color.gif"),url("images/bg_paper.gif");
+	background-repeat:repeat-x,repeat;
+	background-position:top left,top left;
+	text-align:left;
+	color:#2C2C2C;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.clearfix {zoom:1;}
+.clearfix:after {
+  content: ""; 
+  display: block; 
+  clear: both;
+}
+
+
+a:link{text-decoration:none;}
+a:hover{text-decoration:none;}
+	
+
+/**/
+#wrapper{
+	width:700px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+
+/**/
+header{
+	padding:100px 0;
+	margin:0 auto;
+	width:668px;
+}
+header h2{
+	text-align:right;
+	font-size:90%;
+}
+
+
+/**/
+nav#category:before{
+	content: "";
+	display: block;
+    border-top: 1px solid #ccc;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    -o-box-shadow: 0 1px 0 #fff;
+    -ms-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+}
+nav#category:after{
+	content: "";
+	display: block;
+    border-top: 1px solid #ccc;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    -o-box-shadow: 0 1px 0 #fff;
+    -ms-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+}
+nav#category{
+	position:relative;
+	overflow:hidden;
+	margin-bottom:40px;
+	font-family: 'Open Sans', sans-serif;
+}
+nav#category ul{
+	position:relative;
+	left:50%;
+	float:left;
+	padding:10px 0;
+}
+nav#category li{
+	padding:10px 20px;
+	position:relative;
+	left:-50%;
+	float:left;
+}
+nav#category li a{color:#2C2C2C;}
+nav#category li a:hover{color:#6F6C68;}
+
+
+/**/
+#postBox{
+	position:relative;
+	left:50%;
+	float:left;
+	padding:10px 0;
+	margin:0 -10px 0 5px;
+}
+
+#postBox .post{
+	width:220px;
+	background:#fff;
+    -webkit-box-shadow: 1px 1px 0 #ccc;
+    -moz-box-shadow: 1px 1px 0 #ccc;
+    -o-box-shadow: 1px 1px 0 #ccc;
+    -ms-box-shadow: 1px 1px 0 #ccc;
+    box-shadow: 1px 1px 0 #ccc;
+	
+	position:relative;
+	left:-50%;
+	float:left;
+	margin:0 15px 30px 0;
+}
+#postBox .post h2{
+	margin:220px 15px 15px 15px;
+	font-size:120%;
+	line-height:110%;
+	font-weight:bold;
+}
+#postBox .post h2 a{color:#2C2C2C;}
+#postBox .post h2 a:hover{color:#6F6C68;}
+
+#postBox .post .postImage{
+	position:absolute;
+	top:20px;
+	left:15px;
+}
+#postBox .post .postDetail{
+	position:absolute;
+	top:188px;
+	left:15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/**/
+.post .category{
+	padding:2px 5px;
+	color:#fff;
+	float:left;
+	/* Firefox v1.0+ */
+	-moz-border-radius:2px 2px;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:2px 2px;
+	/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:2px 2px;
+}
+.post .category a{color:#fff;}
+.post .category a:hover{color:#fff;}
+.post time{
+	float:left;
+	padding:2px 5px;
+}
+.post .Fireworks{background:#EDDA6F;}
+.post .Photoshop{background:#84C6D0;}
+.post .Illustrator{background:#E17E93;}
+.post .Other{background:#89CAB4;}
+
+
+/**/
+.ninja_onebutton{
+	margin-top:50px;
+}
+
+/**/
+
+footer{
+	margin:10px 0 50px 0;
+}
+
+footer h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size:120%;
+	font-weight:bold;
+}
+
+footer:before{
+	content: "";
+	display: block;
+    border-top: 1px solid #ccc;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    -o-box-shadow: 0 1px 0 #fff;
+    -ms-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+}
+footer a{
+	color:#fff;
+}
+footer a{
+	background-color:rgb(111,108,104);
+	/* Firefox v1.0+ */
+	-moz-border-radius:5px 5px;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:5px 5px;
+	/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:5px 5px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset;
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset;
+    -o-box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset;
+    -ms-box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset;
+	padding:2px 7px;
+	margin:0 5px 5px 0;
+	float:left;
+}
+footer a:hover{
+	background:#958F88;
+}
+
+.tagBox,
+.profileBox{
+	width:340px;
+	margin-top:20px;
+	position:relative;
+}
+.tagBox{
+	float:left;
+}
+
+.tagBox h2,
+.profileBox h2{
+	margin-bottom:20px;
+}
+.profileBox{
+	float:right;
+}
+
+.profileBox .snsImage{
+	width:100px;
+	border:1px #fff solid;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+.profileBox ul{
+	margin-left:110px;
+	margin-top:-100px;
+	margin-bottom:40px;
+}
+.profileBox .profileText{
+	margin-left:110px;
+}
+/**/
+
+
+
+#postPageBox{
+	width:700px;
+	margin:0 15px 30px 0;
+	padding-top:200px;
+	position:relative;
+}
+#postPageBox .post .rightBox{
+	position:relative;
+}
+
+#postPageBox .post .postDetail{ 
+	position:absolute;
+	top:0px;
+	left:220px;
+}
+#postPageBox .post .postImage,
+#postPageBox .post a img{
+	position:absolute;
+	top:0px;
+	left:0px;border:5px #fff solid;
+    -webkit-box-shadow: 1px 1px 0 #ccc;
+    -moz-box-shadow: 1px 1px 0 #ccc;
+    -o-box-shadow: 1px 1px 0 #ccc;
+    -ms-box-shadow: 1px 1px 0 #ccc;
+    box-shadow: 1px 1px 0 #ccc;
+}
+#postPageBox .post h2{
+	font-size:300%;
+	line-height:110%;
+	position:absolute;
+	top:30px;
+	left:220px;
+}
+#postPageBox .entry p{
+	margin-bottom:50px;
+	line-height:170%;
+}
+
+/**/
+.navigation{
+	clear:both;
+}
