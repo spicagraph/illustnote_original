@@ -25,7 +25,7 @@ body{
 	font-family:Source Sans Pro,Segoe UI Emoji,sans-serif;
 	margin: 0;
 	padding: 0;
-	font-size: 95%;
+	font-size: 90%;
 	background: #F6F6F8;
 }
 .clearfix {zoom:1;}
@@ -577,16 +577,17 @@ footer a{
 
  .singleMoreAfter h3{
 	font-size:120%;
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom:20px;
+	margin-top:40px;
 }
 .singleMoreAfter p{
 	margin-bottom:20px;
-	line-height:200%;
+	line-height:180%;
 }
 .singleMoreAfter ul{
 	margin-bottom:40px;
-	line-height:200%;
+	line-height:180%;
 }
  .singleMoreAfter .entryImage{
 	width: 800px;
@@ -684,7 +685,7 @@ footer a:hover,
 .sketch .textColorBg{background:#A7A7DF;}
 
 #postPageBox .singleMoreAfter strong{
-	font-size:120%;
+	/*ont-size:120%;*/
 }
 #postPageBox .singleMoreAfter .sharedaddy li,
 #postPageBox .singleMoreAfter .sharedaddy li a{
@@ -727,7 +728,7 @@ footer a:hover,
 #postPageBox .singleMoreAfter .yarppBox ul{
 	margin:20px 0 40px 0;
 	padding:0 0 0 20px;
-	line-height:250%;
+	line-height:200%;
 	border:none;
 	background:none;
 }
