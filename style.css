@@ -474,13 +474,14 @@ footer a{
 	position:relative;
 }
 .singleMoreAfter {
+	counter-reset: h2; /* h2 dカウンタの初期化。 */
 	width:800px;
 	/*padding-left: 100px;*/
 	position: relative;
 	color:#666;
 	margin:-60px auto 0 auto;
 }
- .singleMoreAfter h2{
+.singleMoreAfter h2{
 	font-size:150%;
 	font-weight: normal;
 	line-height:110%;
@@ -491,7 +492,8 @@ footer a{
 }
 
 .singleMoreAfter h2:before{
-    content: '';
+	counter-increment: h2; /* カウンタのインクリメント */
+	content: counter( h2, decimal-leading-zero); /* レンダリング */
     display: block;
     width: 22px;
     height: 2px;
@@ -504,15 +506,15 @@ footer a{
 	line-height: 50px;
 	font-size:22px;
 }
-.singleMoreAfter .h201:before{content: '01';}
-.singleMoreAfter .h202:before{content: '02';}
-.singleMoreAfter .h203:before{content: '03';}
-.singleMoreAfter .h204:before{content: '04';}
-.singleMoreAfter .h205:before{content: '05';}
-.singleMoreAfter .h206:before{content: '06';}
-.singleMoreAfter .h207:before{content: '07';}
-.singleMoreAfter .h208:before{content: '08';}
-.singleMoreAfter .h209:before{content: '09';}
+/*.singleMoreAfter .h201:before{content: '01';}*/
+/*.singleMoreAfter .h202:before{content: '02';}*/
+/*.singleMoreAfter .h203:before{content: '03';}*/
+/*.singleMoreAfter .h204:before{content: '04';}*/
+/*.singleMoreAfter .h205:before{content: '05';}*/
+/*.singleMoreAfter .h206:before{content: '06';}*/
+/*.singleMoreAfter .h207:before{content: '07';}*/
+/*.singleMoreAfter .h208:before{content: '08';}*/
+/*.singleMoreAfter .h209:before{content: '09';}*/
 
 /*.singleMoreAfter .h202:after,
 .singleMoreAfter .h203:after,
