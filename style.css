@@ -57,7 +57,8 @@ a:hover{text-decoration:none;}
 	z-index:100;
 }
 .home header ,
-.archive header {
+.archive header,
+.error404 header {
 	padding:0;
 	margin:0 auto;
 	width:100%;
@@ -83,7 +84,8 @@ a:hover{text-decoration:none;}
 	height:80px;
 }
 .home header h1,
-.archive header h1 {
+.archive header h1,
+.error404 header h1 {
 	width:760px;
 	margin: 0 auto;
 	padding-top: 80px;
@@ -91,7 +93,8 @@ a:hover{text-decoration:none;}
 	position: relative;
 }
 .home header h1 a,
-.archive header h1 a{
+.archive header h1 a,
+.error404 header h1 a{
 	display: block;
 	width:760px;
 	height:80px;
@@ -111,7 +114,8 @@ header h2{
 	z-index:100;
 }
 .home header h2,
-.archive header h2{
+.archive header h2,
+.error404 header h2{
 	width:760px;
 	margin: -80px auto 0 auto;
 	text-align:right;
@@ -129,6 +133,14 @@ header h2{
 	padding:10px 0;
 	margin:60px auto 0 auto;
 	left:70px;
+}
+.error404 #postBox{
+	width:900px;
+	overflow: hidden;
+	position:relative;
+	padding:10px 0;
+	margin:60px auto 0 auto;
+	left:0;
 }
 .postList {
 	width: 350px;
