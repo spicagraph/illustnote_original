@@ -65,12 +65,6 @@
 </header>
 
 
-<div id="postPageBox" class="clearfix">
-
-<?php while ( have_posts() ) : the_post(); ?>
-<!--post-->
-
-<article class="singlePost">
 <section class="singlePostTitle">
 <h1 class="singlePostH1"><?php the_title(); ?></h1>
 	<div class="singlePostDetail">
@@ -79,17 +73,24 @@
 	</div>
 </section>
 
+<div id="postPageBox" class="clearfix">
+
+<?php while ( have_posts() ) : the_post(); ?>
+<!--post-->
+
+<article class="singlePost">
+
 <!--more-->
 <div class="singleMoreBefore">
-	<p><?php if(strpos(get_the_content(),'id="more-')) :
-global $more; $more = 0;
-the_content(''); ?>
-</p>
 <p class="postImage"><?php the_post_thumbnail(); ?></p>
 </div>
 
 <!--more以降-->
 <div class="singleMoreAfter">
+	<p><?php if(strpos(get_the_content(),'id="more-')) :
+global $more; $more = 0;
+the_content(''); ?>
+</p>
 <?php $more = 1;
 the_content('', true );
 else : the_content();

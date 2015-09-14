@@ -25,7 +25,7 @@ body{
 	font-family:Source Sans Pro,Segoe UI Emoji,sans-serif;
 	margin: 0;
 	padding: 0;
-	font-size: 90%;
+	font-size: 100%;
 	background: #F6F6F8;
 }
 .clearfix {zoom:1;}
@@ -53,7 +53,7 @@ a:hover{text-decoration:none;}
 	padding:0;
 	margin:0 auto;
 	width:100%;
-	height:200px;
+	/*height:200px;*/
 	z-index:100;
 }
 .home header ,
@@ -140,7 +140,7 @@ header h2{
 .indexListTitleBox{
 	background: #fff;
 	padding: 5px 20px 20px 20px;
-	height:140px;
+	height:160px;
 }
 .postList p {
 	margin: 0;padding: 0;
@@ -153,7 +153,7 @@ header h2{
 	padding: 0;
 	}
 .postList a{
-	color:#333;
+	color:#111;
 	}
 .postList a:hover{
 	color:#999;
@@ -174,11 +174,11 @@ header h2{
 	font-size:12px;
 }*/
 
-article.fireworks .indexListTitle a,article.fireworks .indexListTitle{color:#CB9316;}
+/*article.fireworks .indexListTitle a,article.fireworks .indexListTitle{color:#CB9316;}
 article.photoshop .indexListTitle a,article.photoshop .indexListTitle{color:#29A4CA;}
 article.illustrator .indexListTitle a,article.illustrator .indexListTitle{color:#CC4D3C;}
 article.other .indexListTitle a,article.other .indexListTitle{color:#32AE9D;}
-article.sketch .indexListTitle a,article.sketch .indexListTitle{color:#A7A7DF;}
+article.sketch .indexListTitle a,article.sketch .indexListTitle{color:#A7A7DF;}*/
 .indexPostDetail{
 	font-size:80%;
 	line-height: 130%;	
@@ -231,12 +231,14 @@ article.sketch .indexListTitle a,article.sketch .indexListTitle{color:#A7A7DF;}
 	margin: 0 auto;
 	padding-bottom: 10px;
 	/*padding-left: 100px;*/
-	font-size:150%;
+	color:#111;
+	font-size:160%;
 	line-height:130%;
 	font-weight: normal;
     position: relative;
     text-align: center;
 }
+
 
 @media screen and (min-width:1024px) {
 /*.singlePostH1:before{
@@ -386,13 +388,13 @@ filter:alpha(opacity=70);
 .singlePostTitle{
 	width: 100%;
 	margin: 0 auto;
-	padding: 60px 0 20px 0;
+	padding: 160px 0 40px 0;
 }
-.fireworks .singlePostTitle{background:#E8BE61;}
+/*.fireworks .singlePostTitle{background:#E8BE61;}
 .photoshop .singlePostTitle{background:#65BAD4;}
 .illustrator .singlePostTitle{background:#E58678;}
 .other .singlePostTitle{background:#66C4B7;}
-.sketch .singlePostTitle{background:#A7A7DF;}
+.sketch .singlePostTitle{background:#A7A7DF;}*/
 
 .mgb100{margin-bottom:100px;}
 
@@ -479,7 +481,7 @@ footer a{
 	/*padding-left: 100px;*/
 	position: relative;
 	color:#666;
-	margin:-60px auto 0 auto;
+	margin:80px auto 0 auto;
 }
 .singleMoreAfter h2{
 	font-size:150%;
@@ -584,8 +586,8 @@ footer a{
 	margin-top:40px;
 }
 .singleMoreAfter p{
-	margin-bottom:20px;
-	line-height:180%;
+	margin-bottom:40px;
+	line-height:200%;
 }
 .singleMoreAfter ul{
 	margin-bottom:40px;
@@ -864,7 +866,7 @@ header h2{
 	height: auto;
 	border:5px solid #eee;
 	background: #fff;
-	padding: 10px;
+	padding: 5px 0px;
 	text-align: center;
 	margin-bottom:20px;
 }
@@ -1001,8 +1003,8 @@ ul.related_post li {
 }
 #postPageBox ul.related_post li a {
 	border:none;
-	font-size:120% !important;
-	line-height:120% !important;
+	font-size:100% !important;
+	line-height:150% !important;
 }
 ul.related_post li img {
 	width: 100% !important;
