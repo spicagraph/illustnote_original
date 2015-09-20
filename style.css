@@ -65,12 +65,6 @@ a:hover{text-decoration:none;}
 	height:240px;
 	z-index:100;
 }
-/*.fireworks header{background:#E8BE61;}
-.photoshop header{background:#65BAD4;}
-.illustrator header{background:#E58678;}
-.other header{background:#66C4B7;}
-.sketch header{background:#A7A7DF;}
-.home header,.archive header,.category header{background:none;}*/
 .single header h1 {
 	width:500px;
 	margin: 0 auto;
@@ -176,21 +170,6 @@ header h2{
 	line-height:120%;
 	position: relative;
 }
-/*.postList h1.indexListTitle:before{
-    position: absolute;
-    top: 0;
-    left: 0;
-	font-family: 'Roboto', sans-serif;
-	content: 'title';
-	display: block;
-	font-size:12px;
-}*/
-
-/*article.fireworks .indexListTitle a,article.fireworks .indexListTitle{color:#CB9316;}
-article.photoshop .indexListTitle a,article.photoshop .indexListTitle{color:#29A4CA;}
-article.illustrator .indexListTitle a,article.illustrator .indexListTitle{color:#CC4D3C;}
-article.other .indexListTitle a,article.other .indexListTitle{color:#32AE9D;}
-article.sketch .indexListTitle a,article.sketch .indexListTitle{color:#A7A7DF;}*/
 .indexPostDetail{
 	font-size:80%;
 	line-height: 130%;	
@@ -251,34 +230,6 @@ article.sketch .indexListTitle a,article.sketch .indexListTitle{color:#A7A7DF;}*
     text-align: center;
 }
 
-
-@media screen and (min-width:1024px) {
-/*.singlePostH1:before{
-    content: '';
-    display: block;
-    width: 22px;
-    height: 3px;
-    position: absolute;
-    top: 0;
-    left: 0;
-	font-family: 'Roboto', sans-serif;
-	content: 'title';
-	display: block;
-	line-height: 30px;
-	font-size:12px;
-}
-.fireworks .singlePostH1:before,
-.fireworks .singlePostDetail:before{background: #CB9316;color:#CB9316;}
-.illustrator .singlePostH1:before,
-.illustrator .singlePostDetail:before{background: #CC4D3C;color:#CC4D3C;}
-.photoshop .singlePostH1:before,
-.photoshop .singlePostDetail:before{background: #1D7691;color:#1D7691;}
-.sketch .singlePostH1:before,
-.sketch .singlePostDetail:before{background: #8775C8;color:#8775C8;}
-.other .singlePostH1:before,
-.other .singlePostDetail:before{background: #247D70;color:#247D70;}*/
-}
-
 #postBox .singlePost h2 a{color:#2C2C2C;}
 #postBox .singlePost h2 a:hover,
 #postBox .postList .postImage:hover{
@@ -298,52 +249,12 @@ filter:alpha(opacity=70);
     position: relative;
     text-align: center;
 }
-@media screen and (min-width: 641px) {
-/*.singlePostDetail:before{
-    content: '';
-    display: block;
-    width: 22px;
-    height: 3px;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-	font-family: 'Roboto', sans-serif;
-	content: 'detail';
-	line-height: 30px;
-	font-size:12px;
-	display: block;
-	color:#fff;
-}*/
-}
-@media screen and (min-width: 641px) {
-/*.singlePostH1:before{
-    content: '';
-    display: block;
-    width: 22px;
-    height: 3px;
-    position: absolute;
-    top: 0;
-    left: 0;
-	font-family: 'Roboto', sans-serif;
-	content: 'title';
-	display: block;
-	line-height: 30px;
-	font-size:12px;
-}*/
-}
 .singlePostDetail a{
 	color:#333;
 }
 .singlePostDetail a:hover{
 	color:#999;
 }
-/*.singlePostDetail time:before{
-	content: 'Post:';
-}
- .singlePostDetail .category:before{
-	content: 'Category:';
-}*/
 .singleMoreBefore{/*シングルページmore前*/
 	width:100%;
 	margin: 0 auto;
@@ -357,7 +268,6 @@ filter:alpha(opacity=70);
 .singleMoreBefore p{
 	width: 800px;
 	margin: 0 auto;
-	/*padding-left: 100px;*/
 }
 .singleMoreBefore .postImage{
 	width: 780px;
@@ -402,11 +312,13 @@ filter:alpha(opacity=70);
 	margin: 0 auto;
 	padding: 160px 0 40px 0;
 }
-/*.fireworks .singlePostTitle{background:#E8BE61;}
-.photoshop .singlePostTitle{background:#65BAD4;}
-.illustrator .singlePostTitle{background:#E58678;}
-.other .singlePostTitle{background:#66C4B7;}
-.sketch .singlePostTitle{background:#A7A7DF;}*/
+@media screen and (max-width: 641px) {
+.singlePostTitle{
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 20px 40px 20px;
+}
+}
 
 .mgb100{margin-bottom:100px;}
 
@@ -490,7 +402,6 @@ footer a{
 .singleMoreAfter {
 	counter-reset: h2; /* h2 dカウンタの初期化。 */
 	width:800px;
-	/*padding-left: 100px;*/
 	position: relative;
 	color:#666;
 	margin:80px auto 0 auto;
@@ -520,65 +431,6 @@ footer a{
 	line-height: 50px;
 	font-size:22px;
 }
-/*.singleMoreAfter .h201:before{content: '01';}*/
-/*.singleMoreAfter .h202:before{content: '02';}*/
-/*.singleMoreAfter .h203:before{content: '03';}*/
-/*.singleMoreAfter .h204:before{content: '04';}*/
-/*.singleMoreAfter .h205:before{content: '05';}*/
-/*.singleMoreAfter .h206:before{content: '06';}*/
-/*.singleMoreAfter .h207:before{content: '07';}*/
-/*.singleMoreAfter .h208:before{content: '08';}*/
-/*.singleMoreAfter .h209:before{content: '09';}*/
-
-/*.singleMoreAfter .h202:after,
-.singleMoreAfter .h203:after,
-.singleMoreAfter .h204:after,
-.singleMoreAfter .h205:after,
-.singleMoreAfter .h206:after,
-.singleMoreAfter .h207:after,
-.singleMoreAfter .h208:after,
-.singleMoreAfter .h209:after{
-	content: '';
-	display:block;
-	position: absolute;
-	top:-60px;
-	left:0;
-	width: 100%;
-	height: 1px;
-	background: #ccc;
-}*/
-/*.arrow{
-	position: relative;
-	display: block;
-	width: 40px;
-	height: 40px;
-	margin: 40px auto 0 auto;
-}
-.arrow:before{
-  display: block;
-  content: "";
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 5px;
-  left:0;
-  width: 50px;
-  height: 50px;
-  border-right:5px solid #65BAD4;
-  border-bottom:5px solid #CC4D3C;
-}
-.arrow:after{
-  display: block;
-  content: "";
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 0;
-  left:0;
-  width: 50px;
-  height: 50px;
-  background: #F6F6F8;
-}*/
 
 .fireworks .singleMoreAfter h2:before{background:#E8BE61;}
 .photoshop .singleMoreAfter h2:before{background:#65BAD4;}
@@ -781,7 +633,7 @@ header div.sharedaddy .sd-content{
 
 
 
-@media screen and ( max-width:1024px) {
+@media screen and (max-width:1024px) {
 .single header,
 .home header ,
 .archive header {
@@ -798,7 +650,7 @@ header div.sharedaddy .sd-content{
 	width:80%;
 	margin: 0 auto;
 	padding-top: 60px;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	z-index:100;
 	position: relative;
 }
@@ -917,7 +769,7 @@ header h2{
 .singleMoreBefore .postImage{
 	width: 100%;
 	height:auto;
-	line-height:1em;
+	line-height:0;
 	text-align: center;
 	margin: 0 auto;
 	padding: 0;
@@ -947,9 +799,6 @@ header h2{
 	color:#666;
 	margin:0 auto 0 auto;
 }
-/* .singleMoreAfter h2{
-	margin-top:80px;
-}*/
 .linkTop {
 	width: 90%;
 	text-align: right;
