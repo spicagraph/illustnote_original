@@ -191,30 +191,26 @@ header h2{
 	display:block;
 	float: left;
 }
-#category .cat-item-6,
-#category .cat-item-8,
-#category .cat-item-14,
-#category .cat-item-7{
+#category li{
 	border-left:1px solid #999;
 }
-#category .cat-item-30{
-	border-left:1px solid #999;
+#category li:last-child{
 	border-right:1px solid #999;
 }
 #category a{
 	display: block;
 	padding: 10px 20px;
 }
-#category .cat-item-6 a{color: #DED074;}
-#category .cat-item-8 a{color: #DEA59E}
-#category .cat-item-7 a{color: #9CCDD1;}
-#category .cat-item-30 a {color: #C4A7CB;}
-#category .cat-item-14 a {color: #9ECEBC}
-#category .cat-item-6 a:hover{background: #DED074;color:#fff;}
-#category .cat-item-8 a:hover{background: #DEA59E;color:#fff;}
-#category .cat-item-7 a:hover{background: #9CCDD1;color:#fff;}
-#category .cat-item-30 a:hover{background: #C4A7CB;color:#fff;}
-#category .cat-item-14 a:hover{background: #9ECEBC;color:#fff;}
+#category .cat-item-fireworks a{color: #DED074;}
+#category .cat-item-illustrator a{color: #DEA59E}
+#category .cat-item-photoshop a{color: #9CCDD1;}
+#category .cat-item-sketch a {color: #C4A7CB;}
+#category .cat-item-other a {color: #9ECEBC}
+#category .cat-item-fireworks a:hover{background: #DED074;color:#fff;}
+#category .cat-item-illustrator a:hover{background: #DEA59E;color:#fff;}
+#category .cat-item-photoshop a:hover{background: #9CCDD1;color:#fff;}
+#category .cat-item-sketch a:hover{background: #C4A7CB;color:#fff;}
+#category .cat-item-other a:hover{background: #9ECEBC;color:#fff;}
 
 
 .singlePostH1{/*シングルページブログタイトル*/
@@ -316,7 +312,7 @@ filter:alpha(opacity=70);
 .singlePostTitle{
 	width: 100%;
 	margin: 0 auto;
-	padding: 40px 20px 40px 20px;
+	padding: 20px;
 }
 }
 
@@ -633,6 +629,14 @@ header div.sharedaddy .sd-content{
 
 
 
+@media screen and (max-width:640px) {
+body{
+	font-size:80%;
+}
+.singleMoreAfter h2{
+	margin-top:140px;
+}
+}
 @media screen and (max-width:1024px) {
 .single header,
 .home header ,
@@ -649,8 +653,8 @@ header div.sharedaddy .sd-content{
 .single header h1 {
 	width:80%;
 	margin: 0 auto;
-	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 	z-index:100;
 	position: relative;
 }
@@ -673,7 +677,7 @@ header h2{
 	text-align:right;
 	margin: 0;
 	position: absolute;
-	top:50px;
+	top:30px;
 	font-size:80%;
 	color:#666;
 	z-index:100;
@@ -694,6 +698,7 @@ header h2{
 	background: #fff;
 }
 .indexListTitleBox{
+	width:80%;
 	background: #fff;
 	padding: 5px 20px 20px 20px;
 	height:120px;
