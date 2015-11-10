@@ -30,3 +30,15 @@ function add_cat_slug_class( $output, $args ) {
     return $output;
 }
 add_filter( 'wp_list_categories', 'add_cat_slug_class', 10, 2 );
+
+//Title tag support v4.4 or over
+function insg_theme_slug_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'insg_theme_slug_setup' );
+
+function insg_title_separator($sep){
+    $sep = '|';
+    return $sep;
+}
+add_filter( 'document_title_separator', 'insg_title_separator' );
