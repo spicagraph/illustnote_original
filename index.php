@@ -88,7 +88,7 @@ if(is_array($cats)) {
 <div class="indexPostDetail">
 	<p class="category <?php echo $ancCateSlug; ?>"><?php the_category(', ') ?></p>
 	<time><?php the_time("Y/n/d/") ?></time>
-	<!--p><?php the_content( $more_link_text , $strip_teaser, $more_file ); ?> </p-->
+	<!--p><?php the_content(); ?></p-->
 </div>
 </div>
 </article>
