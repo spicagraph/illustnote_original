@@ -37,6 +37,15 @@ function insg_theme_slug_setup(){
 }
 add_action('after_setup_theme', 'insg_theme_slug_setup');
 
+function insg_theme_name_wp_title( $title = '' ) {
+    if( is_home() || is_front_page() ){
+        $title = get_bloginfo( 'name', 'display' );
+    }
+    return $title;
+}
+add_filter( 'wp_title', 'insg_theme_name_wp_title', 10, 3 ); //TODO 4.4にバージョンアップ後に削除
+add_filter( 'pre_get_document_title', 'insg_theme_name_wp_title' );
+
 function insg_title_separator($sep){
     $sep = '|';
     return $sep;
