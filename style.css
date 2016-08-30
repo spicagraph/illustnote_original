@@ -10,6 +10,7 @@ Version:        0.1.0
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /**/
 div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,ul,li,form,input,textarea,button,table,tr,th,td,article,aside,footer,header,nav,section{
@@ -21,7 +22,7 @@ box-sizing: border-box;
 }
 body{
 	text-align:left;
-	color:#666;
+	color:#111;
 	font-family:Source Sans Pro,Segoe UI Emoji,sans-serif;
 	margin: 0;
 	padding: 0;
@@ -66,23 +67,23 @@ a:hover{text-decoration:none;}
 	z-index:100;
 }
 .single header h1 {
-	width:500px;
+	width:240px;
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 50px;
 	z-index:100;
 	position: relative;
 }
 .single header h1 a{
 	display: block;
-	width:500px;
-	height:80px;
+	width:240px;
+	height:40px;
 }
 .home header h1,
 .archive header h1,
 .error404 header h1 {
-	width:760px;
+	width:300px;
 	margin: 0 auto;
-	padding-top: 80px;
+	padding-top: 70px;
 	z-index:100;
 	position: relative;
 }
@@ -90,8 +91,8 @@ a:hover{text-decoration:none;}
 .archive header h1 a,
 .error404 header h1 a{
 	display: block;
-	width:760px;
-	height:80px;
+	width:300px;
+	height:100px;
 	margin: 0 auto;
 }
 
@@ -100,22 +101,24 @@ header h2{
 	
 }
 .single header h2{
-	width:500px;
-	margin: -80px auto 0 auto;
-	text-align:right;
-	font-size:80%;
-	color:#666;
+	width:300px;
+	margin:40px auto;
+	text-align:center;
+	font-size:70%;
+	color:#333;
 	z-index:100;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 .home header h2,
 .archive header h2,
 .error404 header h2{
-	width:760px;
-	margin: -80px auto 0 auto;
-	text-align:right;
+	width:600px;
+	margin: 0 auto;
+	text-align:center;
 	font-size:80%;
-	color:#666;
+	color:#111;
 	z-index:100;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 
 
@@ -165,14 +168,20 @@ header h2{
 	color:#999;
 	}
 .postList h1.indexListTitle{
-	font-size:120%;
+	font-size:100%;
 	font-weight: normal;
-	line-height:120%;
+	line-height:140%;
 	position: relative;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 .indexPostDetail{
 	font-size:80%;
 	line-height: 130%;	
+	font-family: 'Montserrat', sans-serif;
+	color: #999;
+}
+.indexPostDetail a{
+	color: #999;
 }
 
 #category {
@@ -193,6 +202,7 @@ header h2{
 }
 #category li{
 	border-left:1px solid #999;
+	font-size:80%;
 }
 #category li:last-child{
 	border-right:1px solid #999;
@@ -200,12 +210,14 @@ header h2{
 #category a{
 	display: block;
 	padding: 10px 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 #category .cat-item-fireworks a{color: #DED074;}
 #category .cat-item-illustrator a{color: #DEA59E}
 #category .cat-item-photoshop a{color: #9CCDD1;}
 #category .cat-item-sketch a {color: #C4A7CB;}
 #category .cat-item-other a {color: #9ECEBC}
+
 #category .cat-item-fireworks a:hover{background: #DED074;color:#fff;}
 #category .cat-item-illustrator a:hover{background: #DEA59E;color:#fff;}
 #category .cat-item-photoshop a:hover{background: #9CCDD1;color:#fff;}
@@ -214,16 +226,17 @@ header h2{
 
 
 .singlePostH1{/*シングルページブログタイトル*/
-	width: 800px;
+	width: 1000px;
 	margin: 0 auto;
 	padding-bottom: 10px;
 	/*padding-left: 100px;*/
 	color:#111;
-	font-size:160%;
-	line-height:130%;
+	font-size:180%;
+	line-height:140%;
 	font-weight: normal;
     position: relative;
     text-align: center;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 
 #postBox .singlePost h2 a{color:#2C2C2C;}
@@ -241,7 +254,7 @@ filter:alpha(opacity=70);
 	padding-bottom: 20px;
 	font-size:80%;
 	line-height:100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
     position: relative;
     text-align: center;
 }
@@ -260,21 +273,28 @@ filter:alpha(opacity=70);
 .illustrator .singleMoreBefore{background:#E58678;}
 .other .singleMoreBefore{background:#66C4B7;}
 .sketch .singleMoreBefore{background:#A7A7DF;}
+/*
+.fireworks header svg path{fill: #E8BE61;}
+.photoshop header svg path{fill: #65BAD4;}
+.illustrator header svg path{fill: #E58678;}
+.other header svg path{fill: #66C4B7;}
+.sketch header svg path{fill: #A7A7DF;}*/
+
 
 .singleMoreBefore p{
 	width: 800px;
 	margin: 0 auto;
 }
 .singleMoreBefore .postImage{
-	width: 780px;
-	height:410px;
+	width: 1000px;
+	height:525px;
 	text-align: center;
 	margin: 0 auto;
 	padding: 0;
 	}
 .postImage img{
-	width: 780px;
-	height:410px;
+	width: 1000px;
+	height:525px;
 }
 .singleMoreBefore .sharedaddy{
 	width: 900px;
@@ -301,12 +321,12 @@ filter:alpha(opacity=70);
 .singlePost{
 	margin: 0 auto;
 	color:#333;
-	line-height: 180%;
+	line-height: 200%;
 }
 .singlePostTitle{
 	width: 100%;
 	margin: 0 auto;
-	padding: 160px 0 40px 0;
+	padding: 60px 0 40px 0;
 }
 @media screen and (max-width: 1024px) {
 .singlePostTitle{
@@ -328,7 +348,7 @@ footer{
 }
 
 footer h2{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size:120%;
 }
 
@@ -345,12 +365,13 @@ footer:before{
 footer a{
 	margin:0 10px 5px 0;
 	float:left;
-	font-family: 'Roboto', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 }
 
 .profileBox{
 	width:900px;
 	margin-top:20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .profileBox h2{
@@ -399,33 +420,36 @@ footer a{
 	counter-reset: h2; /* h2 dカウンタの初期化。 */
 	width:800px;
 	position: relative;
-	color:#666;
+	color:#333;
 	margin:80px auto 0 auto;
 }
 .singleMoreAfter h2{
-	font-size:150%;
+	font-size:130%;
 	font-weight: normal;
 	line-height:110%;
 	margin-top:200px;
-	margin-bottom:40px;
+	margin-bottom:60px;
 	position: relative;
 	text-align:center;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
+	letter-spacing: 0.05em;
 }
 
 .singleMoreAfter h2:before{
 	counter-increment: h2; /* カウンタのインクリメント */
 	content: counter( h2, decimal-leading-zero); /* レンダリング */
     display: block;
-    width: 22px;
+    width: 28px;
     height: 2px;
 	position: relative;
     top: -80px;
     left: 50%;
     margin-left:-11px;
 	display: block;
-	font-family: 'Roboto', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	line-height: 50px;
-	font-size:22px;
+	font-size:28px;
+	letter-spacing: 0em;
 }
 
 .fireworks .singleMoreAfter h2:before{background:#E8BE61;}
@@ -452,15 +476,23 @@ footer a{
 .singleMoreAfter ul{
 	margin-bottom:40px;
 	line-height:180%;
-}
- .singleMoreAfter .entryImage{
-	width: 800px;
+} .singleMoreAfter img{
+	width: 100%;
+	height:auto;
+	box-sizing: border-box;
 	border:5px solid #eee;
 	background: #fff;
 	padding: 10px;
 	text-align: center;
-	margin-bottom:20px;
 }
+.fi-horizontal img{
+	width: auto;
+	height: auto;
+	border:none;
+	background: none;
+	padding: auto;
+	text-align: center;
+	margin-bottom:0;}
  .singleMoreAfter .entryTextBox{
 	border:5px solid #eee;
 	background: #fff;
@@ -583,7 +615,7 @@ footer a:hover,
 	margin:40px 0;
 }
 .yarppBox h2{
-	font-family: 'Roboto', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size:150%;
 	font-weight: 700; 
 	margin-top:40px;
@@ -651,10 +683,9 @@ body{
 .home header h1,
 .archive header h1,
 .single header h1 {
-	width:80%;
+	width:40%;
 	margin: 0 auto;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	padding-top: 20px;
 	z-index:100;
 	position: relative;
 }
@@ -667,20 +698,22 @@ body{
 }
 
 header h2{
+	padding-bottom: 20px;
+	margin-top: -20px;
 	font-weight: normal;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 	
 }
 .home header h2,
 .archive header h2,
 .single header h2{
-	width:80%;
-	text-align:right;
+	width:100%;
+	text-align:center;
 	margin: 0;
-	position: absolute;
-	top:30px;
 	font-size:80%;
-	color:#666;
+	color:#111;
 	z-index:100;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 
 	
@@ -694,14 +727,13 @@ header h2{
 }
 .postList {
 	width:100%;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 	background: #fff;
 }
 .indexListTitleBox{
-	width:80%;
 	background: #fff;
 	padding: 5px 20px 20px 20px;
-	height:120px;
+	height:auto;
 }
 .postList p {
 	margin: 0;padding: 0;
@@ -716,7 +748,6 @@ header h2{
 .indexListTitleBox{
 	background: #fff;
 	padding: 5px 20px 20px 20px;
-	height:150px;
 }
 #category {
 	width: 90%;
@@ -727,21 +758,8 @@ header h2{
 	width:100%;
 	padding-left: 100px;
 	position: relative;
-	color:#666;
+	color:#111;
 	margin:-60px auto 0 auto;
-}
- .singleMoreAfter .entryImage{
-	width: 100%;
-	height: auto;
-	border:5px solid #eee;
-	background: #fff;
-	padding: 5px 0px;
-	text-align: center;
-	margin-bottom:20px;
-}
- .singleMoreAfter .entryImage img{
-	width: 100%;
-	height: auto;
 }
 .navigation{
 	width: 90%;
@@ -753,11 +771,12 @@ header h2{
 	margin: 0 auto;
 	padding-bottom: 10px;
 	padding-left: 0;
-	font-size:150%;
+	font-size:160%;
 	line-height:130%;
 	font-weight: normal;
     position: relative;
     text-align: center;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
  .singlePostDetail{/*記事情報*/
 	width: 100%;
@@ -766,7 +785,7 @@ header h2{
 	padding-bottom: 20px;
 	font-size:80%;
 	line-height:100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
     position: relative;
     text-align: center;
 }
@@ -801,7 +820,7 @@ header h2{
 	width: 90%;
 	padding-left: 0;
 	position: relative;
-	color:#666;
+	color:#111;
 	margin:0 auto 0 auto;
 }
 .linkTop {
@@ -826,13 +845,14 @@ footer{
 	left:-20px;
 }
 .wp_rp_wrap .related_post_title {
-	font-size:150% !important;
+	font-size:100% !important;
 	font-weight: normal !important;
 	line-height:110% !important;
 	margin-top:200px !important;
 	margin-bottom:40px !important;
 	position: relative !important;
 	text-align:center !important;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 .wp_rp_wrap .related_post_title:before{
     content: '' !important;
@@ -844,7 +864,7 @@ footer{
     left: 50% !important;
     margin-left:-11px !important;
 	display: block !important;
-	font-family: 'Roboto', sans-serif !important;
+	font-family:  'Montserrat', sans-serif !important;
 	line-height: 50px !important;
 	font-size:22px !important;
 	background:#333 !important;
@@ -869,8 +889,18 @@ ul.related_post li {
 }
 #postPageBox ul.related_post li a {
 	border:none;
-	font-size:100% !important;
-	line-height:150% !important;
+	font-size:90% !important;
+	line-height:130% !important;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
+}
+#postPageBox ul.related_post li a:hover {
+	background:none;
+	color:#999;
+	font-family:"FOT-ニューセザンヌ Pro M{pm}";
+}
+small{
+	font-family: 'Montserrat', sans-serif;
+	color: #999;
 }
 ul.related_post li img {
 	width: 100% !important;
@@ -882,9 +912,13 @@ ul.related_post li img {
 	.wp_rp_content,ul.related_post {
 		width: 100% !important;
 		}
+	.wp_rp_content{
+		left:0;
+	}
 	ul.related_post li {
 		display: block !important;
 		margin: 0 auto 20px auto !important;
+		height:auto !important;
 		}
 	}
 	
