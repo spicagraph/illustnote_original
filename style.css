@@ -144,12 +144,10 @@ header h2{
 	float: left;
 	margin-right:60px;
 	margin-bottom: 60px;
-	background: #fff;
 }
 .indexListTitleBox{
-	background: #fff;
-	padding: 5px 20px 20px 20px;
-	height:160px;
+	padding: 0　0 20px 0;
+	height:120px;
 }
 .postList p {
 	margin: 0;padding: 0;
@@ -728,11 +726,9 @@ header h2{
 .postList {
 	width:100%;
 	margin-bottom: 20px;
-	background: #fff;
 }
 .indexListTitleBox{
-	background: #fff;
-	padding: 5px 20px 20px 20px;
+	padding: 0 0 20px 0;
 	height:auto;
 }
 .postList p {
@@ -746,8 +742,7 @@ header h2{
 	padding: 0;
 	}
 .indexListTitleBox{
-	background: #fff;
-	padding: 5px 20px 20px 20px;
+	padding: 0　0 20px 0;
 }
 #category {
 	width: 90%;
