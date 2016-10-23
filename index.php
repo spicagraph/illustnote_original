@@ -165,8 +165,8 @@
                 <h1 class="indexListTitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
                 <div class="indexPostDetail">
-                    <p class="category <?php echo $ancCateSlug; ?>"><?php the_category(', ') ?></p>
-                    <time><?php the_time("Y/n/d/") ?></time>
+                    <p class="category"><time><?php the_time("Y-n-d") ?></time>｜<?php the_category(', ') ?></p>
+                   
                     <!--p><?php the_content(); ?></p-->
                 </div>
             </div>

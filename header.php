@@ -6,7 +6,6 @@
 	<?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?>
 	</title>
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed"
           href="<?php bloginfo('rss2_url'); ?>"/>

@@ -1,4 +1,10 @@
 <?php
+	//スタイルシート読み込み	
+function illustnote_scripts() {
+	wp_enqueue_style( 'illustnote-style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'illustnote_scripts' );
+
 // カテゴリーのスラッグを投稿とページ全体の各クラスへ追加
 function category_id_class($classes){
     global $post;

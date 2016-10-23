@@ -11,6 +11,7 @@ Version:        0.1.0
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 /**/
 div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,ul,li,form,input,textarea,button,table,tr,th,td,article,aside,footer,header,nav,section{
@@ -23,7 +24,7 @@ box-sizing: border-box;
 body{
 	text-align:left;
 	color:#111;
-	font-family:Source Sans Pro,Segoe UI Emoji,sans-serif;
+	font-family:"Noto Sans Japanese",Source Sans Pro,Segoe UI Emoji,sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
@@ -52,7 +53,7 @@ a:hover{text-decoration:none;}
 /**/
 .single header{
 	padding:0;
-	margin:0 auto;
+	margin:40px auto 0 auto;
 	width:100%;
 	/*height:200px;*/
 	z-index:100;
@@ -63,27 +64,25 @@ a:hover{text-decoration:none;}
 	padding:0;
 	margin:0 auto;
 	width:100%;
-	height:240px;
+	height:160px;
 	z-index:100;
 }
 .single header h1 {
-	width:240px;
+	width:200px;
 	margin: 0 auto;
-	padding-top: 50px;
 	z-index:100;
 	position: relative;
 }
 .single header h1 a{
 	display: block;
-	width:240px;
-	height:40px;
+	width:200px;
+	height:auto;
 }
 .home header h1,
 .archive header h1,
 .error404 header h1 {
 	width:300px;
-	margin: 0 auto;
-	padding-top: 70px;
+	margin: 40px auto 0 auto;
 	z-index:100;
 	position: relative;
 }
@@ -102,12 +101,11 @@ header h2{
 }
 .single header h2{
 	width:300px;
-	margin:40px auto;
+	margin:-5px auto 40px auto;
 	text-align:center;
 	font-size:70%;
 	color:#333;
 	z-index:100;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 .home header h2,
 .archive header h2,
@@ -118,7 +116,6 @@ header h2{
 	font-size:80%;
 	color:#111;
 	z-index:100;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 
 
@@ -170,7 +167,6 @@ header h2{
 	font-weight: normal;
 	line-height:140%;
 	position: relative;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 .indexPostDetail{
 	font-size:80%;
@@ -224,17 +220,16 @@ header h2{
 
 
 .singlePostH1{/*シングルページブログタイトル*/
-	width: 1000px;
+	width: 90%;
 	margin: 0 auto;
 	padding-bottom: 10px;
 	/*padding-left: 100px;*/
 	color:#111;
 	font-size:180%;
 	line-height:140%;
-	font-weight: normal;
+	font-weight: 500;
     position: relative;
     text-align: center;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 
 #postBox .singlePost h2 a{color:#2C2C2C;}
@@ -254,7 +249,7 @@ filter:alpha(opacity=70);
 	line-height:100%;
 	font-family: 'Montserrat', sans-serif;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 .singlePostDetail a{
 	color:#333;
@@ -272,10 +267,10 @@ filter:alpha(opacity=70);
 .other .singleMoreBefore{background:#66C4B7;}
 .sketch .singleMoreBefore{background:#A7A7DF;}
 /*
-.fireworks header svg path{fill: #E8BE61;}
+.fireworks header{background: #E8BE61;}
 .photoshop header svg path{fill: #65BAD4;}
 .illustrator header svg path{fill: #E58678;}
-.other header svg path{fill: #66C4B7;}
+.other header {background: #66C4B7;}
 .sketch header svg path{fill: #A7A7DF;}*/
 
 
@@ -284,15 +279,16 @@ filter:alpha(opacity=70);
 	margin: 0 auto;
 }
 .singleMoreBefore .postImage{
-	width: 1000px;
-	height:525px;
+	width: 100%;
+	height:auto;
 	text-align: center;
 	margin: 0 auto;
 	padding: 0;
 	}
 .postImage img{
-	width: 1000px;
-	height:525px;
+	width: 80%;
+	height:auto;
+	vertical-align: top;
 }
 .singleMoreBefore .sharedaddy{
 	width: 900px;
@@ -324,12 +320,12 @@ filter:alpha(opacity=70);
 .singlePostTitle{
 	width: 100%;
 	margin: 0 auto;
-	padding: 60px 0 40px 0;
+	padding: 40px 0 0 0;
 }
 @media screen and (max-width: 1024px) {
 .singlePostTitle{
 	width: 100%;
-	margin: 0 auto;
+	margin: 20px auto 0 auto;
 	padding: 20px;
 }
 }
@@ -350,16 +346,6 @@ footer h2{
 	font-size:120%;
 }
 
-footer:before{
-	content: "";
-	display: block;
-    border-top: 1px solid #ccc;
-    -webkit-box-shadow: 0 1px 0 #fff;
-    -moz-box-shadow: 0 1px 0 #fff;
-    -o-box-shadow: 0 1px 0 #fff;
-    -ms-box-shadow: 0 1px 0 #fff;
-    box-shadow: 0 1px 0 #fff;
-}
 footer a{
 	margin:0 10px 5px 0;
 	float:left;
@@ -419,17 +405,16 @@ footer a{
 	width:800px;
 	position: relative;
 	color:#333;
-	margin:80px auto 0 auto;
+	margin:100px auto 0 auto;
 }
 .singleMoreAfter h2{
 	font-size:130%;
-	font-weight: normal;
+	font-weight: 500;
 	line-height:110%;
-	margin-top:200px;
+	margin-top:160px;
 	margin-bottom:60px;
 	position: relative;
 	text-align:center;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 	letter-spacing: 0.05em;
 }
 
@@ -437,16 +422,16 @@ footer a{
 	counter-increment: h2; /* カウンタのインクリメント */
 	content: counter( h2, decimal-leading-zero); /* レンダリング */
     display: block;
-    width: 28px;
+    width: 20px;
     height: 2px;
 	position: relative;
-    top: -80px;
+    top: -50px;
     left: 50%;
-    margin-left:-11px;
+    margin-left:-10px;
 	display: block;
 	font-family:  'Montserrat', sans-serif;
 	line-height: 50px;
-	font-size:28px;
+	font-size:16px;
 	letter-spacing: 0em;
 }
 
@@ -538,16 +523,16 @@ footer a{
 footer a,
 .linkTop a{
 	color:#333;
-	border-bottom:1px dotted #333;
 	margin-top:0;
+}
+#postPageBox a{
+	text-decoration: underline;
 }
 #postPageBox a:hover,
 .navigation a:hover,
 footer a:hover,
-.linkTop ahover{
-	color:#fff;
-	background:#999;
-	border-bottom:1px dotted #999;
+.linkTop a:hover{
+	color:#999;
 }
 #postPageBox .entryImage a,
 #postPageBox  a.fi-btn{
@@ -646,7 +631,6 @@ footer a:hover,
 	line-height:30px;
 }
 .linkTop a:hover{
-	background:#958F88;
 }
 
 div.sharedaddy .sd-content{
@@ -672,7 +656,7 @@ body{
 .home header ,
 .archive header {
 	padding:0;
-	margin:0 auto;
+	margin:0 auto 0 auto;
 	width:100%;
 	height:auto;
 	z-index:100;
@@ -681,9 +665,8 @@ body{
 .home header h1,
 .archive header h1,
 .single header h1 {
-	width:40%;
-	margin: 0 auto;
-	padding-top: 20px;
+	width:30%;
+	margin: 40px auto 0 auto;
 	z-index:100;
 	position: relative;
 }
@@ -696,10 +679,9 @@ body{
 }
 
 header h2{
-	padding-bottom: 20px;
-	margin-top: -20px;
+	padding-bottom: 30px;
+	margin-top: -30px;
 	font-weight: normal;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 	
 }
 .home header h2,
@@ -711,7 +693,6 @@ header h2{
 	font-size:80%;
 	color:#111;
 	z-index:100;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 
 	
@@ -768,21 +749,20 @@ header h2{
 	padding-left: 0;
 	font-size:160%;
 	line-height:130%;
-	font-weight: normal;
+	font-weight: 500;
     position: relative;
     text-align: center;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
  .singlePostDetail{/*記事情報*/
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 0;
-	padding-bottom: 20px;
+	padding-bottom: 0;
 	font-size:80%;
 	line-height:100%;
 	font-family: 'Montserrat', sans-serif;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 
 .singleMoreBefore .postImage{
@@ -838,16 +818,16 @@ footer{
 	width: 820px !important;
 	position: relative !important;
 	left:-20px;
+	margin-top:100px !important;
 }
 .wp_rp_wrap .related_post_title {
 	font-size:100% !important;
 	font-weight: normal !important;
 	line-height:110% !important;
-	margin-top:200px !important;
+	margin-top:100px !important;
 	margin-bottom:40px !important;
 	position: relative !important;
 	text-align:center !important;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 .wp_rp_wrap .related_post_title:before{
     content: '' !important;
@@ -870,28 +850,19 @@ ul.related_post {
 }
 ul.related_post li {
 	width: 253px !important;
-	height:250px !important;
-	background: #fff;
 	margin:0 0 0 20px !important;
-	background: #fff !important;
 }
 .wp_rp_publish_date{
-	padding: 10px;
-}
-.wp_rp_title{
-	padding: 0 10px 10px 10px !important;
-	
+	padding: 10px 0;
 }
 #postPageBox ul.related_post li a {
 	border:none;
 	font-size:90% !important;
 	line-height:130% !important;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 #postPageBox ul.related_post li a:hover {
 	background:none;
 	color:#999;
-	font-family:"FOT-ニューセザンヌ Pro M{pm}";
 }
 small{
 	font-family: 'Montserrat', sans-serif;

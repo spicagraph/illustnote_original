@@ -136,16 +136,18 @@
 </svg>
             </a></h1>
         <h2><?php bloginfo('description'); ?></h2>
+            <div class="singleMoreBefore">
+                <p class="postImage"><?php the_post_thumbnail(); ?></p>
+            </div>
     </header>
 
 
     <section class="singlePostTitle">
+        <div class="singlePostDetail">
+                    <p class="category"><time><?php the_time("Y-n-d") ?></time>｜<?php the_category(', ') ?></p>
+                    </div>
         <h1 class="singlePostH1"><?php the_title(); ?></h1>
 
-        <div class="singlePostDetail">
-            <p class="category"><?php the_category(', ') ?></p>
-            <time><?php echo get_the_date(); ?></time>
-        </div>
     </section>
 
     <div id="postPageBox" class="clearfix">
@@ -157,9 +159,6 @@
         <article class="singlePost">
 
             <!--more-->
-            <div class="singleMoreBefore">
-                <p class="postImage"><?php the_post_thumbnail(); ?></p>
-            </div>
 
             <!--more以降-->
             <div class="singleMoreAfter">
@@ -173,18 +172,8 @@
                 else : the_content();
                 endif; ?>
 
-
                 <?php echo get_the_tag_list('タグ：', ',', ''); ?>
                 <?php wp_related_posts() ?>
-                <div class="box-fb-pageplugin">
-                    <div class="fb-page" data-href="https://www.facebook.com/in.spicagraph" data-width="800"
-                         data-height="300" data-hide-cover="true" data-show-facepile="true" data-show-posts="false">
-                        <div class="fb-xfbml-parse-ignore">
-                            <blockquote cite="https://www.facebook.com/in.spicagraph"><a
-                                    href="https://www.facebook.com/in.spicagraph">デザイナーのイラストノート</a></blockquote>
-                        </div>
-                    </div>
-                </div>
 
                 <p class="linkIndex"><a href="<?php echo esc_url(home_url('/')); ?>"
                                         title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">イラストノート　トップページへ戻る</a>
@@ -205,6 +194,15 @@
                 <!--/post-->
                 <?php endwhile; // end of the loop. ?>
             </div>
+                <div class="box-fb-pageplugin">
+                    <div class="fb-page" data-href="https://www.facebook.com/in.spicagraph" data-width="800"
+                         data-height="300" data-hide-cover="true" data-show-facepile="true" data-show-posts="false">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/in.spicagraph"><a
+                                    href="https://www.facebook.com/in.spicagraph">デザイナーのイラストノート</a></blockquote>
+                        </div>
+                    </div>
+                </div>
         </article>
 
     </div>
