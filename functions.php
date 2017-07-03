@@ -1,7 +1,12 @@
 <?php
 	//スタイルシート読み込み	
 function illustnote_scripts() {
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat' );
+	wp_enqueue_style( 'google-fonts-early-access', '//fonts.googleapis.com/earlyaccess/notosansjapanese.css' );
+	wp_enqueue_style( 'highlight-css', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/xcode.min.css' );
 	wp_enqueue_style( 'illustnote-style', get_stylesheet_uri() );
+	
+	wp_enqueue_script( 'highlight-js', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js');
 }
 add_action( 'wp_enqueue_scripts', 'illustnote_scripts' );
 
@@ -57,3 +62,10 @@ function insg_title_separator($sep){
     return $sep;
 }
 add_filter('document_title_separator', 'insg_title_separator');
+
+//SVG
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');

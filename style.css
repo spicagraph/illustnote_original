@@ -8,10 +8,6 @@ Author URI:     http://in.spicagraph.com/
 Version:        0.1.0
 */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 /**/
 div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,ul,li,form,input,textarea,button,table,tr,th,td,article,aside,footer,header,nav,section{
@@ -53,9 +49,8 @@ a:hover{text-decoration:none;}
 /**/
 .single header{
 	padding:0;
-	margin:40px auto 0 auto;
+	margin:0 auto;
 	width:100%;
-	/*height:200px;*/
 	z-index:100;
 }
 .home header ,
@@ -64,24 +59,25 @@ a:hover{text-decoration:none;}
 	padding:0;
 	margin:0 auto;
 	width:100%;
-	height:160px;
+	height:200px;
 	z-index:100;
 }
 .single header h1 {
-	width:200px;
+	width:100%;
 	margin: 0 auto;
-	z-index:100;
-	position: relative;
+	position: absolute;
+	top:10px;
 }
 .single header h1 a{
 	display: block;
-	width:200px;
+	width:10vw;
+	margin: 0 auto;
 	height:auto;
 }
 .home header h1,
 .archive header h1,
 .error404 header h1 {
-	width:300px;
+	width:180px;
 	margin: 40px auto 0 auto;
 	z-index:100;
 	position: relative;
@@ -90,8 +86,7 @@ a:hover{text-decoration:none;}
 .archive header h1 a,
 .error404 header h1 a{
 	display: block;
-	width:300px;
-	height:100px;
+	width:100%;
 	margin: 0 auto;
 }
 
@@ -100,22 +95,24 @@ header h2{
 	
 }
 .single header h2{
-	width:300px;
+/*	width:300px;
 	margin:-5px auto 40px auto;
 	text-align:center;
 	font-size:70%;
 	color:#333;
-	z-index:100;
+	z-index:100;*/
+	display: none;
 }
 .home header h2,
 .archive header h2,
 .error404 header h2{
-	width:600px;
+/*	width:600px;
 	margin: 0 auto;
 	text-align:center;
 	font-size:80%;
 	color:#111;
-	z-index:100;
+	z-index:100;*/
+	display: none;
 }
 
 
@@ -140,7 +137,7 @@ header h2{
 	width: 350px;
 	float: left;
 	margin-right:60px;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 .indexListTitleBox{
 	padding: 0　0 20px 0;
@@ -164,7 +161,7 @@ header h2{
 	}
 .postList h1.indexListTitle{
 	font-size:100%;
-	font-weight: normal;
+	font-weight: 600;
 	line-height:140%;
 	position: relative;
 }
@@ -179,8 +176,9 @@ header h2{
 }
 
 #category {
-	width: 760px;
-	margin: 40px auto 40px auto;
+	width: 780px;
+	margin: 60px auto 40px auto;
+	padding-left: 10px;
 }
 #category ul,
 #category  li{
@@ -195,22 +193,23 @@ header h2{
 	float: left;
 }
 #category li{
-	border-left:1px solid #999;
+/*	border-left:1px solid #999;*/
 	font-size:80%;
-}
-#category li:last-child{
-	border-right:1px solid #999;
 }
 #category a{
 	display: block;
 	padding: 10px 20px;
 	font-family: 'Montserrat', sans-serif;
+	border-style:solid;
+	border-width: 1px;
+	border-radius: 20px;
+	margin-right: 10px;
 }
-#category .cat-item-fireworks a{color: #DED074;}
-#category .cat-item-illustrator a{color: #DEA59E}
-#category .cat-item-photoshop a{color: #9CCDD1;}
-#category .cat-item-sketch a {color: #C4A7CB;}
-#category .cat-item-other a {color: #9ECEBC}
+#category .cat-item-fireworks a{color: #DED074; border-color: #DED074;}
+#category .cat-item-illustrator a{color: #DEA59E; border-color:#DEA59E;}
+#category .cat-item-photoshop a{color: #9CCDD1; border-color:#9CCDD1;}
+#category .cat-item-sketch a {color: #C4A7CB; border-color:#C4A7CB;}
+#category .cat-item-other a {color: #9ECEBC; border-color:#9ECEBC;}
 
 #category .cat-item-fireworks a:hover{background: #DED074;color:#fff;}
 #category .cat-item-illustrator a:hover{background: #DEA59E;color:#fff;}
@@ -220,14 +219,14 @@ header h2{
 
 
 .singlePostH1{/*シングルページブログタイトル*/
-	width: 90%;
+	width: 800px;
 	margin: 0 auto;
 	padding-bottom: 10px;
 	/*padding-left: 100px;*/
 	color:#111;
-	font-size:180%;
+	font-size:160%;
 	line-height:140%;
-	font-weight: 500;
+	font-weight: 600;
     position: relative;
     text-align: center;
 }
@@ -244,12 +243,11 @@ filter:alpha(opacity=70);
 	width: 800px;
 	margin: 0 auto;
 	/*padding-left: 100px;*/
-	padding-bottom: 20px;
 	font-size:80%;
 	line-height:100%;
 	font-family: 'Montserrat', sans-serif;
     position: relative;
-    text-align: left;
+    text-align: center;
 }
 .singlePostDetail a{
 	color:#333;
@@ -257,9 +255,12 @@ filter:alpha(opacity=70);
 .singlePostDetail a:hover{
 	color:#999;
 }
+.category{
+	line-height:150%;
+}
 .singleMoreBefore{/*シングルページmore前*/
 	width:100%;
-	margin: 0 auto;
+	margin: 12vw auto 0 auto;
 }
 .fireworks .singleMoreBefore{background:#E8BE61;}
 .photoshop .singleMoreBefore{background:#65BAD4;}
@@ -286,7 +287,8 @@ filter:alpha(opacity=70);
 	padding: 0;
 	}
 .postImage img{
-	width: 80%;
+	width: 100%;
+	max-width:1200px;
 	height:auto;
 	vertical-align: top;
 }
@@ -315,18 +317,18 @@ filter:alpha(opacity=70);
 .singlePost{
 	margin: 0 auto;
 	color:#333;
-	line-height: 200%;
+	line-height: 260%;
 }
 .singlePostTitle{
 	width: 100%;
-	margin: 0 auto;
-	padding: 40px 0 0 0;
+	margin: 80px auto 0 auto;
+	padding: 0 0 0 0;
 }
 @media screen and (max-width: 1024px) {
 .singlePostTitle{
 	width: 100%;
-	margin: 20px auto 0 auto;
-	padding: 20px;
+	margin:40px auto 0 auto;
+	padding: 0 20px;
 }
 }
 
@@ -374,7 +376,7 @@ footer a{
 }
 .profileBox ul{
 	margin-left:100px;
-	margin-top:-140px;
+	margin-top:-120px;
 	margin-bottom:40px;
 }
 .profileBox li{
@@ -408,14 +410,14 @@ footer a{
 	margin:100px auto 0 auto;
 }
 .singleMoreAfter h2{
-	font-size:130%;
-	font-weight: 500;
-	line-height:110%;
+	font-size:140%;
+	font-weight:500;
+	line-height:140%;
 	margin-top:160px;
 	margin-bottom:60px;
 	position: relative;
 	text-align:center;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.02em;
 }
 
 .singleMoreAfter h2:before{
@@ -448,25 +450,28 @@ footer a{
 
  .singleMoreAfter h3{
 	font-size:120%;
-	font-weight: normal;
+	font-weight: bold;
 	margin-bottom:20px;
-	margin-top:40px;
+	margin-top:60px;
 }
 .singleMoreAfter p{
-	margin-bottom:40px;
+	margin-top:40px;
 	line-height:200%;
 }
 .singleMoreAfter ul{
 	margin-bottom:40px;
-	line-height:180%;
-} .singleMoreAfter img{
-	width: 100%;
+	line-height:200%;
+} 
+.singleMoreAfter img{
 	height:auto;
-	box-sizing: border-box;
-	border:5px solid #eee;
 	background: #fff;
-	padding: 10px;
 	text-align: center;
+}
+.singleMoreAfter .size-full{
+	width: 100%;
+}
+.singleMoreAfter .size-medium{
+	width: 50%;
 }
 .fi-horizontal img{
 	width: auto;
@@ -485,17 +490,22 @@ footer a{
 	text-align: left;
 }
 .singleMoreAfter blockquote{
-	padding:0 40px;
+	padding:40px;
 	font-style:italic;
-	margin:0 0 20px 0;
+	margin:0 auto;
 	position: relative;
+	color:#666;
+	background: #fff;
 	}
+.singleMoreAfter #player{
+	margin: 0 auto;
+}
 .singleMoreAfter blockquote:before{
 	content: '“';
 	position: absolute;
-	top:20px;
-	left:0;
-	color:#ccc;
+	top:30px;
+	left:20px;
+	color:#eee;
 	font-size:80px;
 	font-style:normal;
 	}
@@ -503,8 +513,8 @@ footer a{
 	content: '”';
 	position: absolute;
 	bottom:-10px;
-	right:0;
-	color:#ccc;
+	right:20px;
+	color:#eee;
 	font-size:80px;
 	font-style:normal;
 	}
@@ -518,12 +528,19 @@ footer a{
 }
 
 
-#postPageBox a,
-.navigation a,
-footer a,
-.linkTop a{
+#postPageBox a{
 	color:#333;
 	margin-top:0;
+	padding: 0 ;
+}
+.linkIndex a,
+.navigation a,
+footer a{
+	color:#333;
+	margin-top:0;
+	border:1px solid #ccc;
+	border-radius: 30px;
+	padding: 0 40px;
 }
 #postPageBox a{
 	text-decoration: underline;
@@ -537,7 +554,8 @@ footer a:hover,
 #postPageBox .entryImage a,
 #postPageBox  a.fi-btn{
 	border-bottom:none;
-	margin: 0;padding: 0;
+	margin: 0;
+	padding: 0 20px;
 }
 
 
@@ -549,7 +567,7 @@ footer a:hover,
 #postPageBox .singleMoreAfter dd{
 	padding:0 0 0 20px;
 	margin: 0;
-	line-height:180%;
+	line-height:200%;
 	margin:20px 0 40px 0;
 	border-left:1px solid #ccc;
 }
@@ -580,7 +598,7 @@ footer a:hover,
 }
 .navigation a{
 	margin: 10px;
-	padding: 10px;
+	padding: 10px 40px;
 }
 /**/
 .yarppBox:before{
@@ -614,12 +632,15 @@ footer a:hover,
 
 /**/
 #postPageBox .singlePost .linkIndex a{
-	width:300px;
-	height:60px;
-	line-height:60px;
+	height:40px;
+	line-height:40px;
 	display:block;
 	text-align:center;
 	margin:60px auto;
+	border:1px solid #ccc;
+	border-radius: 20px;
+	padding: 0 40px;
+	text-decoration: none;
 }
 .linkTop {
 	width: 900px;
@@ -627,8 +648,13 @@ footer a:hover,
 	margin:0 auto 40px auto ;
 		}
 .linkTop a{
-	padding:10px;
+	padding:10px 40px;
 	line-height:30px;
+	border:1px solid #ccc;
+	border-radius: 20px;
+	padding: 0 40px;
+	text-decoration: none;
+	color: #999;
 }
 .linkTop a:hover{
 }
@@ -665,34 +691,35 @@ body{
 .home header h1,
 .archive header h1,
 .single header h1 {
-	width:30%;
-	margin: 40px auto 0 auto;
+	width:100%;
+	margin:  0 auto;
 	z-index:100;
-	position: relative;
 }
 .home header h1 a,
 .archive header h1 a,
 .single header h1 a{
 	display: block;
-	width:100%;
+	width:10vw;
 	height:auto;
 }
 
 header h2{
-	padding-bottom: 30px;
+/*	padding-bottom: 30px;
 	margin-top: -30px;
-	font-weight: normal;
+	font-weight: normal;*/
+	display: none;
 	
 }
 .home header h2,
 .archive header h2,
 .single header h2{
-	width:100%;
+	/*width:100%;
 	text-align:center;
 	margin: 0;
 	font-size:80%;
 	color:#111;
-	z-index:100;
+	z-index:100;*/
+	display: none;
 }
 
 	
@@ -718,7 +745,7 @@ header h2{
 .postList p img{
 	width:100%;
     height: auto;
-	line-heioght:100%;
+	line-height:100%;
 	margin: 0;
 	padding: 0;
 	}
@@ -747,9 +774,9 @@ header h2{
 	margin: 0 auto;
 	padding-bottom: 10px;
 	padding-left: 0;
-	font-size:160%;
+	font-size:140%;
 	line-height:130%;
-	font-weight: 500;
+	font-weight: 600;
     position: relative;
     text-align: center;
 }
@@ -762,7 +789,7 @@ header h2{
 	line-height:100%;
 	font-family: 'Montserrat', sans-serif;
     position: relative;
-    text-align: left;
+    text-align: center;
 }
 
 .singleMoreBefore .postImage{
@@ -773,15 +800,25 @@ header h2{
 	margin: 0 auto;
 	padding: 0;
 	}
-.postImage img{
-	width: 100%;
-	height:auto;
-	line-height:1em;
-}
 .singleMoreBefore p{
 	width: 90%;
 	margin: 0 auto;
 	padding-left: 0;
+}
+.singleMoreAfter img{
+	border-right: none;
+	border-left: none;
+	background: #fff;
+	padding: 0;
+}
+.singleMoreAfter .size-full,
+.singleMoreAfter .size-large{
+	width: 112%;
+	margin-left: -6%;
+}
+.singleMoreAfter .size-medium{
+	width: 50%;
+	border:10px solid #fff;
 }
 
 .singleMoreBefore .sharedaddy{
@@ -813,8 +850,33 @@ footer{
 }
 }
 
+/*コードハイライター*/
+pre{
+	max-height: 300px;
+	overflow: scroll;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding:0 10px;
+	background: #fff;
+}
+
+/*テーブル*/
+table{
+	border: 1px solid #ccc;
+	background: #fff;
+	border-collapse: collapse;
+}
+th,td{
+	padding: 4px 10px;
+	border: 1px solid #ccc;
+	vertical-align: top:
+}
+th{
+	background: #eee;
+}
+
 /*関連記事*/
-.wp_rp_content{
+/*.wp_rp_content{
 	width: 820px !important;
 	position: relative !important;
 	left:-20px;
@@ -896,3 +958,4 @@ ul.related_post li img {
 	width: 500px;
 	margin: 0 auto;
 }
+*/
