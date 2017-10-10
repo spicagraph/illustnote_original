@@ -47,7 +47,8 @@ a:hover{text-decoration:none;}
 }
 
 /**/
-.single header{
+.single header,
+.page header{
 	padding:0;
 	margin:0 auto;
 	width:100%;
@@ -62,13 +63,15 @@ a:hover{text-decoration:none;}
 	height:200px;
 	z-index:100;
 }
-.single header h1 {
+.single header h1,
+.page header h1 {
 	width:100%;
 	margin: 0 auto;
 	position: absolute;
 	top:10px;
 }
-.single header h1 a{
+.single header h1 a,
+.page header h1 a{
 	display: block;
 	width:10vw;
 	margin: 0 auto;
@@ -94,7 +97,8 @@ header h2{
 	font-weight: normal;
 	
 }
-.single header h2{
+.single header h2,
+.page header h2{
 /*	width:300px;
 	margin:-5px auto 40px auto;
 	text-align:center;
@@ -470,9 +474,9 @@ footer a{
 .singleMoreAfter .size-full{
 	width: 100%;
 }
-.singleMoreAfter .size-medium{
+/*.singleMoreAfter .size-medium{
 	width: 50%;
-}
+}*/
 .fi-horizontal img{
 	width: auto;
 	height: auto;
@@ -563,13 +567,15 @@ footer a:hover,
 #postPageBox .singleMoreAfter dt{
 	font-size:100%;
 	font-weight:bold;
+	line-height: 1.6em
 }
 #postPageBox .singleMoreAfter dd{
 	padding:0 0 0 20px;
 	margin: 0;
 	line-height:200%;
-	margin:20px 0 40px 0;
+	margin:10px 0 40px 0;
 	border-left:1px solid #ccc;
+	line-height: 1.6em
 }
 .textColorBg{
 	padding: 3px;
@@ -679,6 +685,7 @@ body{
 }
 @media screen and (max-width:1024px) {
 .single header,
+.page header,
 .home header ,
 .archive header {
 	padding:0;
@@ -690,14 +697,16 @@ body{
 
 .home header h1,
 .archive header h1,
-.single header h1 {
+.single header h1 ,
+.page header h1{
 	width:100%;
 	margin:  0 auto;
 	z-index:100;
 }
 .home header h1 a,
 .archive header h1 a,
-.single header h1 a{
+.single header h1 a,
+.page header h1 a{
 	display: block;
 	width:10vw;
 	height:auto;
@@ -712,7 +721,8 @@ header h2{
 }
 .home header h2,
 .archive header h2,
-.single header h2{
+.single header h2,
+.page header h2{
 	/*width:100%;
 	text-align:center;
 	margin: 0;
@@ -817,8 +827,6 @@ header h2{
 	margin-left: -6%;
 }
 .singleMoreAfter .size-medium{
-	width: 50%;
-	border:10px solid #fff;
 }
 
 .singleMoreBefore .sharedaddy{
@@ -873,6 +881,18 @@ th,td{
 }
 th{
 	background: #eee;
+}
+
+/*プロフィール*/
+
+.profile-photo{
+	border-radius: 100%;
+	margin:0 auto;
+}
+.link-profile-photo{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
 }
 
 /*関連記事*/
