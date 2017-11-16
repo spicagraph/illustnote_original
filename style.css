@@ -578,7 +578,7 @@ footer a:hover,
 	line-height: 1.6em
 }
 .textColorBg{
-	padding: 3px;
+	padding: 1px 3px;
 }
 
 .fireworks .textColorBg{background:#E8BE61;}
@@ -676,186 +676,193 @@ header div.sharedaddy .sd-content{
 
 
 @media screen and (max-width:640px) {
-body{
-	font-size:80%;
-}
-.singleMoreAfter h2{
-	margin-top:140px;
-}
+	body{
+		font-size:80%;
+	}
+	.singleMoreAfter h2{
+		margin-top:140px;
+	}
 }
 @media screen and (max-width:1024px) {
-.single header,
-.page header,
-.home header ,
-.archive header {
-	padding:0;
-	margin:0 auto 0 auto;
-	width:100%;
-	height:auto;
-	z-index:100;
-}
-
-.home header h1,
-.archive header h1,
-.single header h1 ,
-.page header h1{
-	width:100%;
-	margin:  0 auto;
-	z-index:100;
-}
-.home header h1 a,
-.archive header h1 a,
-.single header h1 a,
-.page header h1 a{
-	display: block;
-	width:10vw;
-	height:auto;
-}
-
-header h2{
-/*	padding-bottom: 30px;
-	margin-top: -30px;
-	font-weight: normal;*/
-	display: none;
+	.single header,
+	.page header,
+	.home header ,
+	.archive header {
+		padding:0;
+		margin:0 auto 0 auto;
+		width:100%;
+		height:auto;
+		z-index:100;
+	}
 	
-}
-.home header h2,
-.archive header h2,
-.single header h2,
-.page header h2{
-	/*width:100%;
-	text-align:center;
-	margin: 0;
-	font-size:80%;
-	color:#111;
-	z-index:100;*/
-	display: none;
-}
-
+	.home header h1,
+	.archive header h1,
+	.single header h1 ,
+	.page header h1{
+		width:100%;
+		margin:  0 auto;
+		z-index:100;
+	}
+	.home header h1 a,
+	.archive header h1 a,
+	.single header h1 a,
+	.page header h1 a{
+		display: block;
+		width:10vw;
+		height:auto;
+	}
 	
-#postBox{
-	width:80%;
-	overflow: hidden;
-	position:relative;
-	padding:10px 0;
-	margin:0 auto 0 auto;
-	left: 0;
-}
-.postList {
-	width:100%;
-	margin-bottom: 20px;
-}
-.indexListTitleBox{
-	padding: 0 0 20px 0;
-	height:auto;
-}
-.postList p {
-	margin: 0;padding: 0;
-}
-.postList p img{
-	width:100%;
-    height: auto;
-	line-height:100%;
-	margin: 0;
-	padding: 0;
+	header h2{
+	/*	padding-bottom: 30px;
+		margin-top: -30px;
+		font-weight: normal;*/
+		display: none;
+		
 	}
-.indexListTitleBox{
-	padding: 0　0 20px 0;
-}
-#category {
-	width: 90%;
-	margin: 40px auto 40px auto;
-	display: none;
-}
-.singleMoreAfter {
-	width:100%;
-	padding-left: 100px;
-	position: relative;
-	color:#111;
-	margin:-60px auto 0 auto;
-}
-.navigation{
-	width: 90%;
-	margin: 60px auto;
-	text-align:center;
-}
-.singlePostH1{/*シングルページブログタイトル*/
-	width: 100%;
-	margin: 0 auto;
-	padding-bottom: 10px;
-	padding-left: 0;
-	font-size:140%;
-	line-height:130%;
-	font-weight: 600;
-    position: relative;
-    text-align: center;
-}
- .singlePostDetail{/*記事情報*/
-	width: 100%;
-	margin: 0 auto;
-	padding-left: 0;
-	padding-bottom: 0;
-	font-size:80%;
-	line-height:100%;
-	font-family: 'Montserrat', sans-serif;
-    position: relative;
-    text-align: center;
-}
-
-.singleMoreBefore .postImage{
-	width: 100%;
-	height:auto;
-	line-height:0;
-	text-align: center;
-	margin: 0 auto;
-	padding: 0;
+	.home header h2,
+	.archive header h2,
+	.single header h2,
+	.page header h2{
+		/*width:100%;
+		text-align:center;
+		margin: 0;
+		font-size:80%;
+		color:#111;
+		z-index:100;*/
+		display: none;
 	}
-.singleMoreBefore p{
-	width: 90%;
-	margin: 0 auto;
-	padding-left: 0;
-}
-.singleMoreAfter img{
-	border-right: none;
-	border-left: none;
-	background: #fff;
-	padding: 0;
-}
-.singleMoreAfter .size-full,
-.singleMoreAfter .size-large{
-	width: 112%;
-	margin-left: -6%;
-}
-.singleMoreAfter .size-medium{
-}
-
-.singleMoreBefore .sharedaddy{
-	width: 90%;
-	padding-left: 0;
-	margin: 10px auto 0 auto;
-	line-height:20px;
-	overflow:hidden;
+	
+		
+	#postBox{
+		width:80%;
+		overflow: hidden;
+		position:relative;
+		padding:10px 0;
+		margin:0 auto 0 auto;
+		left: 0;
 	}
-.singleMoreAfter {
-	width: 90%;
-	padding-left: 0;
-	position: relative;
-	color:#111;
-	margin:0 auto 0 auto;
-}
-.linkTop {
-	width: 90%;
-	text-align: right;
-	margin:0 auto;
+	.postList {
+		width:100%;
+		margin-bottom: 20px;
+	}
+	.indexListTitleBox{
+		padding: 0 0 20px 0;
+		height:auto;
+	}
+	.postList p {
+		margin: 0;padding: 0;
+	}
+	.postList p img{
+		width:100%;
+	    height: auto;
+		line-height:100%;
+		margin: 0;
+		padding: 0;
 		}
-footer{
-	width: 90%;
-	margin:40px auto;
-}
-.profileBox{
-	width: 100%;
-	margin-top:20px;
-}
+	.indexListTitleBox{
+		padding: 0　0 20px 0;
+	}
+	#category {
+		width: 90%;
+		margin: 40px auto 40px auto;
+		display: none;
+	}
+	.singleMoreAfter {
+		width:100%;
+		padding-left: 100px;
+		position: relative;
+		color:#111;
+		margin:-60px auto 0 auto;
+	}
+	.navigation{
+		width: 90%;
+		margin: 60px auto;
+		text-align:center;
+	}
+	.singlePostH1{/*シングルページブログタイトル*/
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 10px;
+		padding-left: 0;
+		font-size:140%;
+		line-height:130%;
+		font-weight: 600;
+	    position: relative;
+	    text-align: center;
+	}
+	 .singlePostDetail{/*記事情報*/
+		width: 100%;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-bottom: 0;
+		font-size:80%;
+		line-height:100%;
+		font-family: 'Montserrat', sans-serif;
+	    position: relative;
+	    text-align: center;
+	}
+	
+	.singleMoreBefore .postImage{
+		width: 100%;
+		height:auto;
+		line-height:0;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+		}
+	.singleMoreBefore p{
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 0;
+	}
+	.singleMoreAfter img{
+		border-right: none;
+		border-left: none;
+		background: #fff;
+		padding: 0;
+	}
+	.singleMoreAfter a img{
+		width:100%;
+		overflow: auto;
+	}
+	img.cboxPhoto{
+		width:100%;
+	}
+	.singleMoreAfter .size-full,
+	.singleMoreAfter .size-large{
+		width: 112%;
+		margin-left: -6%;
+	}
+	.singleMoreAfter .size-medium{
+	}
+	
+	.singleMoreBefore .sharedaddy{
+		width: 90%;
+		padding-left: 0;
+		margin: 10px auto 0 auto;
+		line-height:20px;
+		overflow:hidden;
+		}
+	.singleMoreAfter {
+		width: 90%;
+		padding-left: 0;
+		position: relative;
+		color:#111;
+		margin:0 auto 0 auto;
+	}
+	.linkTop {
+		width: 90%;
+		text-align: right;
+		margin:0 auto;
+			}
+	footer{
+		width: 90%;
+		margin:40px auto;
+	}
+	.profileBox{
+		width: 100%;
+		margin-top:20px;
+	}
 }
 
 /*コードハイライター*/

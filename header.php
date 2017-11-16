@@ -2,9 +2,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; <?php bloginfo('charset'); ?>">
-    <title>
-	<?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?>
-	</title>
     <?php wp_head(); ?>
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed"
           href="<?php bloginfo('rss2_url'); ?>"/>
